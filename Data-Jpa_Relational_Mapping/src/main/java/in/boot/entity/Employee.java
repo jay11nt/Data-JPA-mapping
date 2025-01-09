@@ -19,15 +19,15 @@ public class Employee {
 	private int id;
 	private String empName;
 
-	@OneToOne(mappedBy = "emp", cascade = CascadeType.ALL) // bidirectional ke liye add "mappedBy"
+	@OneToOne(mappedBy = "emp", cascade = CascadeType.ALL)  // for bidirectional use "mappedBy"
 	private Mobile mobile;
 
 	
-	@OneToMany//(mappedBy = "emp",cascade = CascadeType.ALL)
+	@OneToMany						//(mappedBy = "emp",cascade = CascadeType.ALL)
 	@JoinTable(name="dummy_address_column",
 	joinColumns=@JoinColumn(name="address1"),
 	inverseJoinColumns =@JoinColumn (name="address2"))
-	private List<Address> address;
+	private List<Address> address;				//another entity mapping
 
 	public List<Address> getAddress() {
 		return address;
