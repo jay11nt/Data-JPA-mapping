@@ -11,7 +11,7 @@ public class Address
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-		private int id;
+		private int id;				//instance variables
 		private String address;
 		private String type;
 	
@@ -27,7 +27,7 @@ public class Address
 		}
 		
 		
-		
+		//getter setter for instance variables
 		public int getId() {
 			return id;
 		}
