@@ -18,7 +18,7 @@ public class Mobile
 	
 	
 	@OneToOne	
-	@JoinColumn(name="employee_id")//bidirectional
+	@JoinColumn(name="employee_id")   //bidirectional 
 	private Employee emp; 
 
 	public Employee getEmp() {
