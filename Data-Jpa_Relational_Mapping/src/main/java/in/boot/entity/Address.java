@@ -16,7 +16,7 @@ public class Address
 		private String type;
 	
 		
-		@ManyToOne			//bidirectional
+		@ManyToOne			//bidirectional mapping
 		private Employee emp;
 	
 		public Employee getEmp() {
