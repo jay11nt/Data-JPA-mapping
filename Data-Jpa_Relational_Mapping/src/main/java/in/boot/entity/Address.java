@@ -18,7 +18,7 @@ public class Address
 		
 		@ManyToOne			//bidirectional mapping
 		private Employee emp;
-	
+			//getter setter for employee
 		public Employee getEmp() {
 			return emp;
 		}
